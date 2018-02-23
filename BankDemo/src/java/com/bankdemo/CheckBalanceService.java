@@ -47,7 +47,8 @@ public class CheckBalanceService {
         //select account number
         //get balance
         
-        String message = "Balance of account number " + accountNumber + " is " + 0.0;
+        //String message = "Balance of account number " + accountNumber + " is " + 0.0;
+        String message = "0.0";
         StringWriter writer = new StringWriter();
         JAXB.marshal(message, writer); //mashall as XML
         return writer.toString();
